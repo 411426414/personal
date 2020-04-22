@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>登录</title>
+		<link rel="stylesheet" href="../css/login.css">
+	</head>
+
+	<body>
+		<div class="box">
+			<div class="panel">
+				<div class="content login">
+					<h2>
+						<div class="switch">
+							<span id="login" class="active">Login</span>
+							<span>/</span>
+							<span id="signup">Sign Up</span>
+						</div>
+					</h2>
+					<form action="../login.php" method="post" class="inputBox">
+						<input type="hidden" name="id" />
+						<label>
+							<div id="email" class="input" placeholder="Email">
+								<input type="email" name="email" required />
+							</div>
+						</label>
+						<label>
+							<div class="input" placeholder="Username">
+								<input required type="text" name="user"/>
+							</div>
+						</label>
+						<label>
+							<div class="input" placeholder="Password" >
+								<input required type="password" name="pwd"/>
+							</div>
+						</label>
+						<!--<label><div id="repeat" class="input" placeholder="Repeat"><input type="password" /></div></label>-->
+						<span>Forget?</span>
+						<input id="sub" type="submit" value="登录" />
+					</form>
+				</div>
+			</div>
+		</div>
+	</body>
+
+	<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		$("#login").click(function() {
+			$('.switch span').removeClass('active');
+			$(this).addClass('active');
+
+			$(this).parents('.content').removeClass('signup');
+			$(this).parents('.content').addClass('login');
+
+			$('form button').text('LOGIN');
+
+		})
+
+		$("#signup").click(function() {
+			$('.switch span').removeClass('active');
+			$(this).addClass('active');
+
+			$(this).parents('.content').removeClass('login');
+			$(this).parents('.content').addClass('signup');
+
+			$('form button').text('SIGNUP');
+		})
+
+		$('.input input').on('focus', function() {
+			$(this).parent().addClass('focus');
+		})
+
+		$('.input input').on('blur', function() {
+			if($(this).val() === '')
+				$(this).parent().removeClass('focus');
+		})
+	</script>
+
+</html>

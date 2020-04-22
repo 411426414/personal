@@ -1,0 +1,78 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body {
+	/*display: flex;*/
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	font-family: "微软雅黑", sans-serif;
+	background: #000000;
+}
+.card {
+	position: relative;
+	width: 270px;
+	height: 480px;
+	background: #262626;
+	overflow: hidden;
+}
+input,.toggle {
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	bottom: 20px;
+	right: 20px;
+	outline: none;
+	z-index: 10;
+}
+input {opacity: 0;}
+.toggle {
+	pointer-events: none;
+	border-radius: 50%;
+	background: #fff;
+	transition: 0.5s;
+	text-align: center;
+	line-height: 50px;
+	box-shadow: 0 0 0 0px #9C27B0;
+}
+.txt{
+	position: absolute;
+	top: -5%;
+	left: 23%;
+	font-size: 36px;
+}
+input:checked ~ .toggle {
+	box-shadow: 0 0 0 500px #9C27B0;
+	transform: rotate(180deg);
+	transform-origin: center;
+}
+.imgBx,.content {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+.content {
+	padding: 20px;
+	box-sizing: border-box;
+	z-index: 11;
+	pointer-events: none;
+	transition: 0.5s;
+	opacity: 0;
+}
+input:checked~.content {
+	opacity: 1;
+	transition-delay: 0.5s;
+}
+.content h2 {
+	text-align: center;
+	margin-bottom: 5px;
+	color: #fff;
+}
+.content p {
+	text-indent: 2em;
+	margin: 0px;
+	color: #fff;
+}

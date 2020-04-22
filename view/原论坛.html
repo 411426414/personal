@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+	<head lang="en">
+		<meta charset="UTF-8">
+		<title>京东问答</title>
+		<link href="../css/bbs.css" rel="stylesheet">
+
+		<script src="./js/jquery-1.12.4.js"></script>
+		<script src="./js/bbs.js"></script>
+
+		<meta charset="utf-8" content="width=device-width, initial-scale=1.0" name="viewport">
+		
+		<!-- 引入 Bootstrap -->
+		<link href="./css/bootstrap.min.css" rel="stylesheet">
+		<!-- jQuery (Bootstrap 的 JavaScript 插件需要引入 jQuery) -->
+		<script src="./js/jquery.js"></script>
+		<!-- 包括所有已编译的插件 -->
+		<script src="./js/bootstrap.min.js"></script>
+
+		<style type="text/css">
+			li{list-style-type: none;}
+		</style>
+	</head>
+
+	<body>
+		<!--<div class="jumbotron text-center" style="margin-bottom:0">
+			<h1>我的第一个 Bootstrap 页面</h1>
+			<p>重置浏览器窗口大小查看效果！</p>
+		</div>-->
+		<nav class="navbar navbar-inverse">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button class="navbar-toggle" data-target="#myNavbar" data-toggle="collapse" type="button">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="./login.html">登录</a>
+				</div>
+				<div class="collapse navbar-collapse" id="myNavbar">
+					<ul class="nav navbar-nav">
+						<li><a href="../index.php">主页</a></li>
+						<li><a href="./share.html">分享</a></li>
+						<li><a href="./toggle.html">切换</a></li>
+						<li><a href="./QRCode.html">二维码生成器</a></li>
+						<li><a href="./reQRcode.html">二维码解析器</a></li>
+						<li class="active"><a href="#">论坛</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+		<div class="bbs">
+			<header>
+				<span id="show">我要提问</span>
+			</header>
+
+			<section>
+				<ul id="postList">
+					<li>
+						<div>
+							<img src="images/tou04.jpg">
+						</div>
+						<h1>1</h1>
+						<p>
+							<span>版块：生活用品</span>
+							<span>发表时间：2020-1-30 21:24</span>
+						</p>
+					</li>
+				</ul>
+			</section>
+
+
+
+
+			<div class="post" id="post">
+				<input class="title" placeholder="请输入标题（1-50个字符）" id="title"> 所属版块：
+				<select id="sec">
+					<option>请选择版块</option>
+					<option>电子书籍</option>
+					<option>生活用品</option>
+					<option>电子产品</option>
+					<option>儿童玩具</option>
+				</select>
+				<textarea class="content" id="content"></textarea>
+				<input class="btn" value="发布" id="postSuccess">
+				<button class="btn" id="cancel" style="line-height: 0px;">取消</button>
+			</div>
+		</div>
+	</body>
+
+</html>

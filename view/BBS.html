@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+	<head lang="en">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<title>京东问答</title>
+		<link href="./css/bbs.css" rel="stylesheet">
+		<script src="./view/js/jquery-1.12.4.js"></script>
+
+		<!-- 引入 Bootstrap -->
+		<link href="./view/css/bootstrap.min.css" rel="stylesheet">
+		<!-- jQuery (Bootstrap 的 JavaScript 插件需要引入 jQuery) -->
+		<script src="./view/js/jquery.js"></script>
+		<!-- 包括所有已编译的插件 -->
+		<script src="./view/js/bootstrap.min.js"></script>
+
+	</head>
+
+	<body>
+		<!--<div class="jumbotron text-center" style="margin-bottom:0">
+			<h1>我的第一个 Bootstrap 页面</h1>
+			<p>重置浏览器窗口大小查看效果！</p>
+		</div>-->
+
+		<!--导航栏-->
+		<nav class="navbar navbar-inverse">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button class="navbar-toggle" data-target="#myNavbar" data-toggle="collapse" type="button">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="./view/login.html">登录</a>
+				</div>
+				<div class="collapse navbar-collapse" id="myNavbar">
+					<ul class="nav navbar-nav">
+						<li><a href="./index.php">主页</a></li>
+						<li><a href="./view/share.html">分享</a></li>
+						<li><a href="./view/toggle.html">切换</a></li>
+						<li><a href="./view/QRCode.html">二维码生成器</a></li>
+						<li><a href="./view/reQRcode.html">二维码解析器</a></li>
+						<li class="active"><a href="#">论坛</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+
+		<div class="bbs ">
+			<header>
+				<span id="show">我要提问</span>
+			</header>
+
+			<!--显示内容-->
+			<section>
+				<?php foreach($data as $v):?>
+				<ul id="postList">
+					<li>
+						<div>
+							<img src="view/<?=$v['pic']?>">
+						</div>
+						<a href="?id=<?=$v['id']?>">
+							<h1><?=$v['title']?></h1>
+						</a>
+						<p>
+							<span>版块：<?=$v['plate']?></span>
+							<span>发表时间：
+								<?=date("Y年m月d日 H:i", $v['time'])?>
+								&nbsp;
+								<?= format_date($v['time'])?>前
+							</span>
+						</p>
+						<div id="operation">
+							<a href="edit.php?id=<?=$v['id']?>">修改</a>
+							<a href="delete.php?id=<?=$v['id']?>">删除</a>
+						</div>
+					</li>
+				</ul>
+				<?php endforeach?>
+			</section>
+
+			<!--添加内容-->
+			<form action="./save.php" method="post" enctype="multipart/form-data">
+				<div class="post" id="post">
+					<input type="file" name="pic">
+					<input type="text" name="title" class="title" id="title" required="" placeholder="请输入标题(1-50个字符)">
+					所属版块：
+					<select id="sec" name="plate" required="">
+						<option>请选择版块</option>
+						<option>电子书籍</option>
+						<option>生活用品</option>
+						<option>电子产品</option>
+						<option>儿童玩具</option>
+					</select>
+					<textarea class="content" name="content" required=""></textarea>
+					<input type="submit" class="btn" value="发布" id="postSuccess">
+					<button class="btn" id="cancel" style="line-height: 0px;">取消</button>
+				</div>
+			</form>
+		</div>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$("#show").click(function() {
+					$("#post").css("display", "block");
+				});
+				$("#cancel").click(function() {
+					$("#post").css("display", "none");
+				});
+			});
+		</script>
+	</body>
+</html>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="79eb065b-5f40-4ea8-885e-28d5e6faac96" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution>
+      <executable />
+    </execution>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP" />
+  <component name="ProjectId" id="1ZYX4oaUea8KqOPDRmAVhfyd5BE" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+  </component>
+  <component name="RunManager">
+    <configuration name="index.php" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63338/personal/index.php" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.index.php" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="79eb065b-5f40-4ea8-885e-28d5e6faac96" name="Default Changelist" comment="" />
+      <created>1585016813038</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1585016813038</updated>
+      <workItem from="1585016815900" duration="622000" />
+      <workItem from="1585228122657" duration="1128000" />
+      <workItem from="1585458774013" duration="174000" />
+      <workItem from="1585459017260" duration="31000" />
+      <workItem from="1585459061951" duration="2492000" />
+      <workItem from="1585461567439" duration="2000" />
+      <workItem from="1585464279001" duration="26000" />
+      <workItem from="1585466587719" duration="309000" />
+      <workItem from="1587272172716" duration="7000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="937" y="24" key="#PHP" timestamp="1585228251743">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="937" y="24" key="#PHP/0.0.1536.834@0.0.1536.834" timestamp="1585228251743" />
+    <state x="-48" y="39" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1585228925902">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="-48" y="39" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.834@0.0.1536.834" timestamp="1585228925902" />
+    <state x="66" y="158" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1585458853179">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="66" y="158" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1536.834@0.0.1536.834" timestamp="1585458853179" />
+    <state width="723" height="408" key="GridCell.Tab.0.bottom" timestamp="1585229251964">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="723" height="408" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1585229251964" />
+    <state width="723" height="408" key="GridCell.Tab.0.center" timestamp="1585229251963">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="723" height="408" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1585229251963" />
+    <state width="723" height="408" key="GridCell.Tab.0.left" timestamp="1585229251963">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="723" height="408" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1585229251963" />
+    <state width="723" height="408" key="GridCell.Tab.0.right" timestamp="1585229251963">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="723" height="408" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1585229251963" />
+    <state x="599" y="348" key="NewPhpFileDialog" timestamp="1585460312341">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="599" y="348" key="NewPhpFileDialog/0.0.1536.834@0.0.1536.834" timestamp="1585460312341" />
+    <state x="74" y="175" width="621" height="490" key="find.popup" timestamp="1585460419681">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="74" y="175" width="621" height="490" key="find.popup/0.0.1536.834@0.0.1536.834" timestamp="1585460419681" />
+    <state x="814" y="155" width="672" height="678" key="search.everywhere.popup" timestamp="1585229195341">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="814" y="155" width="672" height="678" key="search.everywhere.popup/0.0.1536.834@0.0.1536.834" timestamp="1585229195341" />
+  </component>
+</project>

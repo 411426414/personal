@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="./css/bbs.css"/>
+	</head>
+
+	<body>
+		<form action="./save.php" method="post">
+			<input type="hidden" name="id" value="<?=$edit['id']?>" >
+			<div class="post" id="post" style="display: block;">
+				<input type="text" value="<?=$edit['title']?>" name="title" class="title"> 所属版块：
+				<select id="sec" name="plate" required="">
+					<option value="电子书籍" <?=$edit['plate']=='电子书籍'?"selected":"" ?>>电子书籍</option>
+					<option value="生活用品" <?=$edit['plate']=='生活用品'?"selected":"" ?>>生活用品</option>
+					<option value="电子产品" <?=$edit['plate']=='电子产品'?"selected":"" ?>>电子产品</option>
+					<option value="儿童玩具" <?=$edit['plate']=='儿童玩具'?"selected":"" ?>>儿童玩具</option>
+				</select>
+
+
+				<textarea class="content" name="content"><?=$edit['content']?></textarea>
+				<input type="submit" class="btn" value="发布" id="postSuccess">
+				<button class="btn" id="cancel" style="line-height: 0px;">取消</button>
+			</div>
+		</form>
+	</body>
+
+</html>

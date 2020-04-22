@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>二维码生成器</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" />
+        <script type="text/javascript" src="js/jquery.min.js"></script>
+        <script type="text/javascript" src="js/qrcode.js"></script>
+		
+		<!-- 引入 Bootstrap -->
+		<link href="./css/bootstrap.min.css" rel="stylesheet">
+		<!-- jQuery (Bootstrap 的 JavaScript 插件需要引入 jQuery) -->
+		<script src="./js/jquery.js"></script>
+		<!-- 包括所有已编译的插件 -->
+		<script src="./js/bootstrap.min.js"></script>
+
+    </head>
+    <body>
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button class="navbar-toggle" data-target="#myNavbar" data-toggle="collapse" type="button">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">网站名</a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                        <li><a href="../index.php">主页</a></li>
+                        <li><a href="./share.html">分享</a></li>
+                        <li><a href="./toggle.html">切换</a></li>
+                        <li class="active"><a href="#">二维码生成器</a></li>
+                        <li><a href="./reQRcode.html">二维码解析器</a></li>
+						<li><a href="./bbsList.html">论坛</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        
+        <div style="margin: 10% auto;width: 20%;">
+        	<input id="text" type="text" value="二维码生成器" style="width:100%" /><br />
+        	<div id="qrcode" style="width:100px; height:100px; margin: 15px auto;"></div>
+        </div>
+        
+        <script type="text/javascript">
+            var qrcode = new QRCode(document.getElementById("qrcode"), {width: 100, height: 100});
+            function makeCode() {
+                var elText = document.getElementById("text");
+                if(!elText.value) {
+                    alert("Input a text");
+                    elText.focus();
+                    return;
+                }
+                qrcode.makeCode(elText.value);
+            }
+            makeCode();
+            $("#text")
+                .on("blur", function() {makeCode();})
+                .on("keydown", function(e) {if(e.keyCode == 13) {makeCode();}
+                });
+        </script>
+    </body>
+</html>
